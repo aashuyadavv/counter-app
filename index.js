@@ -1,6 +1,6 @@
 // document.getElementById("count-el").innertext = 5;
 
-//let count = 5
+// let count = 5
 //count = count + 1
 //console.log(count)
 
@@ -8,14 +8,29 @@
 // decrease it down to 25, and then finally increase it to 70 
 // Console.log the value after each step
 
-let bonusPoints = 50
-console.log(bonusPoints)
+// let bonusPoints = 50
+// console.log(bonusPoints)
 
-bonusPoints = bonusPoints + 50
-console.log(bonusPoints)
+// bonusPoints = bonusPoints + 50
+// console.log(bonusPoints)
 
-bonusPoints = bonusPoints - 75
-console.log(bonusPoints)
+// bonusPoints = bonusPoints - 75
+// console.log(bonusPoints)
 
-bonusPoints = bonusPoints + 45
-console.log(bonusPoints)
+// bonusPoints = bonusPoints + 45
+// console.log(bonusPoints)
+
+let countEl = document.getElementById ("count-el") 
+
+let count = 0
+
+function increment() {
+    count = count + 1
+    countEl.innerText = count
+}    
+
+function save() {
+    console.log(count)
+}
+
+save()
