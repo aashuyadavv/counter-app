@@ -14,6 +14,8 @@ function save() {
     countEl.textContent = 0
     count = 0
 } 
+
+
 // saveEl.innerText += countStr
 // console.log(count)
-// console.log("Let's count people on the subway!")
+console.log("Let's count people on the subway!")
