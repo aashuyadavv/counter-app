@@ -1,17 +1,24 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
 </head>
 <body>
-    <h1>People entered</h1>
-    <h2 id="count-el">0</h2>
-    <button id="increment-btn" onclick="increment()">INCREMENT</button>
-    <button id="save-btn" onclick="save()">SAVE</button>
-    <p id="save-el">Previous entries: </p>
-    <script src="index.js"> </script>
+  <div class="counter-container">
+    <h1>Counter App</h1>
+
+    <p id="count">0</p>
+
+    <div class="buttons">
+      <button id="decrease">Decrease</button>
+      <button id="reset">Reset</button>
+      <button id="increase">Increase</button>
+    </div>
+  </div>
 </body>
-</html> 
+</html>

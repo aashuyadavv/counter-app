@@ -1,21 +1,22 @@
-let saveEl = document.getElementById("save-el")
-let countEl = document.getElementById ("count-el") 
-let count = 0
 
+let count = 0;
 
-function increment() {
-    count += 1
-    countEl.textContent = count
-}    
+const countDisplay = document.getElementById("count");
+const increaseBtn = document.getElementById("increase");
+const decreaseBtn = document.getElementById("decrease");
+const resetBtn = document.getElementById("reset");
 
-function save() {
-    let countStr = count + " - "
-    saveEl.textContent += countStr
-    countEl.textContent = 0
-    count = 0
-} 
+increaseBtn.addEventListener("click", function () {
+  count++;
+  countDisplay.textContent = count;
+});
 
+decreaseBtn.addEventListener("click", function () {
+  count--;
+  countDisplay.textContent = count;
+});
 
-// saveEl.innerText += countStr
-// console.log(count)
-console.log("Let's count people on the subway!")
+resetBtn.addEventListener("click", function () {
+  count = 0;
+  countDisplay.textContent = count;
+});
